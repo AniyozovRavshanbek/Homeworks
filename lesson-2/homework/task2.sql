@@ -112,8 +112,7 @@ alter table Products add check (Price>0);
 alter table Products add StockQuantity int default 50;
 
 --20.Rename Category to ProductCategory
-exec sp_rename 'Products.Category','ProductCtegory','column';
-select * from Products;
+exec sp_rename 'Category','ProductCategory','column';
 
 --21.Insert 5 records into the Products table using standard INSERT INTO queries.
 insert into Products
