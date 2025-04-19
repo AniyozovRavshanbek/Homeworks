@@ -84,7 +84,7 @@ select CustomerID from Invoices;
 select CustomerID, Quantity,
 	case
 		when Quantity = 1 then '3%'
-		when Quantity between 1 and 3 then '5%'
+		when Quantity between 2 and 3 then '5%'
 		else '7%'
 	end as [Discount Percentage]
 from Orders;
